@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @entry.photo.url(:small) %>
+
+<p>
+  <b>Name:</b>
+  <%= @entry.name %>
+</p>
+
+<p>
+  <b>Bio:</b>
+  <%= @entry.bio %>
+</p>
+
+<p>
+  <b>Quote:</b>
+  <%= @entry.quote %>
+</p>
+
+<p>
+  <b>Origin:</b>
+  <%= @entry.origin %>
+</p>
+
+<p>
+  <b>Birth:</b>
+  <%= @entry.birth %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>
