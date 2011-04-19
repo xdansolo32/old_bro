@@ -1,6 +1,5 @@
 class InfoController < ApplicationController
   def home
-  	@title = "Welcome to Bromiscuous!"
   end
 
   def contact

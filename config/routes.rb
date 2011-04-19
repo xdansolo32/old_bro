@@ -1,12 +1,17 @@
 Encybropedia::Application.routes.draw do
+  resources :entries, :users
+  
+  match '/signup', :to => 'users#new'
+
   match '/home', :to => 'info#home'
   match '/contact', :to => 'info#contact'
   match '/about', :to => 'info#about'
   match '/entries', :to => 'entries#index'
+  
   root :to => 'info#home'
 
-  resources :entries
-  get "entries/home"
+
+  #get "entries/home"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

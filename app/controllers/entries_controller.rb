@@ -3,7 +3,7 @@ class EntriesController < ApplicationController
   # GET /entries.xml
   def index
     @entries = Entry.all
-
+	@title = "The Encybropedia"
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @entries }
@@ -14,7 +14,7 @@ class EntriesController < ApplicationController
   # GET /entries/1.xml
   def show
     @entry = Entry.find(params[:id])
-	@title = @entry.name
+	@title = "The Encybropedia | #{@entry.name}"
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @entry }
