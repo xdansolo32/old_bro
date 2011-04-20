@@ -4802,3 +4802,410 @@ Rendered layouts/_stylesheets.html.erb (1.6ms)
 Rendered layouts/_header.html.erb (1.6ms)
 Rendered users/show.html.erb within layouts/application (9.8ms)
 Completed 200 OK in 92ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2011-04-19 15:56:14 -0700
+  Processing by InfoController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.1ms)
+Rendered info/home.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 15:56:17 -0700
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (31.7ms)
+Completed   in 37ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :loginId, "User Name" %><br />
+    6:     <%= f.text_field :loginId %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__648286094410078953_2152709980__4581432403645418221'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-04-19 15:56:22 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-04-19 15:56:26 -0700
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed   in 8ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :loginId, "User Name" %><br />
+    6:     <%= f.text_field :loginId %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__648286094410078953_2154131000__4581432403645418221'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 15:57:19 -0700
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed   in 44ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :loginId %><br />
+    6:     <%= f.text_field :loginId %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__648286094410078953_2153526060__4581432403645418221'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 15:57:32 -0700
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed   in 7ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   
+    5:   <div class="field">
+    6:     <%= f.label :name %><br />
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__648286094410078953_2154720220__4581432403645418221'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 15:58:08 -0700
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered users/new.html.erb within layouts/application (70.1ms)
+Completed 200 OK in 99ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 15:58:47 -0700
+  Processing by UsersController#new as HTML
+ERROR: compiling _app_views_users_new_html_erb__648286094410078953_2154164640__4581432403645418221 RAISED /Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="field">
+                   ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="field">
+                   ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="field">
+                   ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="field">
+                   ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:21: syntax error, unexpected tCONSTANT, expecting ')'
+...ord_confirmation, "Confirmation" );@output_buffer.safe_conca...
+...                               ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="actions">
+                     ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:25: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( f.submit "Sign up" );@output_buffer.safe_co...
+...                               ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:25: unterminated string meets end of file
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:25: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_users_new_html_erb__648286094410078953_2154164640__4581432403645418221(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "users/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Sign up</h1>
+
+');@output_buffer.append=  form_for(@user) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+    ');@output_buffer.append= ( f.label :loginId, "User ID );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :loginId );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :email );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :password );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.password_field :password );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :password_confirmation, "Confirmation" );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.password_field :password_confirmation );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="actions">
+    ');@output_buffer.append= ( f.submit "Sign up" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end ;@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/template.rb:255:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/template.rb:255:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/template.rb:134:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:436:in `_run__2254879962396846665__process_action__273976322547620108__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal.rb:178:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:32:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.6/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.6/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.6/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.6/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed   in 30ms
+
+ActionView::Template::Error (/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="field">
+                   ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="field">
+                   ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="field">
+                   ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="field">
+                   ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:21: syntax error, unexpected tCONSTANT, expecting ')'
+...ord_confirmation, "Confirmation" );@output_buffer.safe_conca...
+...                               ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="actions">
+                     ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:25: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( f.submit "Sign up" );@output_buffer.safe_co...
+...                               ^
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:25: unterminated string meets end of file
+/Users/danisun/rails_projects/bromiscuous/app/views/users/new.html.erb:25: syntax error, unexpected $end, expecting ')'):
+    5:     <%= f.label :loginId, "User ID %><br />
+    6:     <%= f.text_field :loginId %>
+    7:   </div>
+    8:   <div class="field">
+    9:     <%= f.label :name %><br />
+    10:     <%= f.text_field :name %>
+    11:   </div>
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 15:58:58 -0700
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered users/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 58ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 15:59:47 -0700
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (2.5ms)
+Rendered users/new.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 93ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 16:08:21 -0700
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.9ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 69ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-04-19 16:08:38 -0700
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIdFcRVuSJ3Js/5Cd/wdn1ZpT2wjepp949iSpIzvPok=", "user"=>{"loginId"=>"fhsdlkfhsdlf", "name"=>"sdflksj@lsdfjs.com", "email"=>"sdflksj@lsdfjs.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('sdflksj@lsdfjs.com')) LIMIT 1[0m
+  [1m[35mAREL (10.7ms)[0m  INSERT INTO "users" ("name", "email", "loginId", "fistPumps", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('sdflksj@lsdfjs.com', 'sdflksj@lsdfjs.com', 'fhsdlkfhsdlf', NULL, '2011-04-19 23:08:38.443564', '2011-04-19 23:08:38.443564', '4910d0118e18ce18fa123ca32c76864955c711f28e10bc6bf8cf06b7565dc3bb', '9bfb74c76f009bb5dcf371b88c60ca15db7cc189dd9ca1f926135ff3d9db5262')
+Completed   in 194ms
+
+ActionView::MissingTemplate (Missing template users/create with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/danisun/rails_projects/bromiscuous/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-04-19 16:15:13 -0700
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIdFcRVuSJ3Js/5Cd/wdn1ZpT2wjepp949iSpIzvPok=", "user"=>{"loginId"=>"fhsdlkfhsdlf", "name"=>"sdflksj@lsdfjs.com", "email"=>"sdflksj@lsdfjs.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('sdflksj@lsdfjs.com')) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered users/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 100ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-04-19 16:21:20 -0700
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIdFcRVuSJ3Js/5Cd/wdn1ZpT2wjepp949iSpIzvPok=", "user"=>{"loginId"=>"fhsdlkfhsdlf", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (8.0ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 113ms (Views: 29.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2011-04-19 16:32:59 -0700
+  Processing by InfoController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered info/home.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-04-19 16:33:03 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 16:33:06 -0700
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (1.8ms)
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered users/new.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 92ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-04-19 16:33:19 -0700
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIdFcRVuSJ3Js/5Cd/wdn1ZpT2wjepp949iSpIzvPok=", "user"=>{"loginId"=>"asdasd", "name"=>"asdasd", "email"=>"asd@asd.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('asd@asd.com')) LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "loginId", "fistPumps", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('asdasd', 'asd@asd.com', 'asdasd', NULL, '2011-04-19 23:33:19.941158', '2011-04-19 23:33:19.941158', '3dd645b84560962d7d23252d40bdc613457e37b1dbae37b9dd8b633c9cf38c99', 'dcf828ecd74eea532b0ade8e7530393037310cdff9feb23cbfe1c283edcf28f9')
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 89ms
+
+
+Started GET "/users/3" for 127.0.0.1 at 2011-04-19 16:33:19 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered users/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 52ms (Views: 15.2ms | ActiveRecord: 1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+
+Started GET "/home" for 127.0.0.1 at 2011-04-19 23:33:46 -0700
+  Processing by InfoController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered info/home.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-04-19 23:33:47 -0700
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered users/new.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 98ms (Views: 32.9ms | ActiveRecord: 0.0ms)
