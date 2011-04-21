@@ -1,7 +1,12 @@
 Encybropedia::Application.routes.draw do
+  get "sessions/new"
+
   resources :entries, :users
+  resources :sessions, :only => [:new, :create, :destroy]
   
   match '/signup', :to => 'users#new'
+  match '/signin', :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
 
   match '/home', :to => 'info#home'
   match '/contact', :to => 'info#contact'
