@@ -32,6 +32,10 @@
     <%= f.date_select :birth %>
   </div>
   <div class="actions">
+  	<%= f.label 'Photo' %> <br />
+    <%= f.file_field :photo %>
+  </div>  
+  <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
