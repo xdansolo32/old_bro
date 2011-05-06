@@ -64,11 +64,13 @@ class UsersController < ApplicationController
     end
   end
   
+  def show
+    @user = User.find(params[:id])
+    @broments = @user.broments.paginate(:page => params[:page])
+    @title = "Proof that " +  @user.name + " is a total bro"
+  end
+  
   private
-
-    def authenticate
-      deny_access unless signed_in?
-    end
     
     def correct_user
       @user = User.find(params[:id])

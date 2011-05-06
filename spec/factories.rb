@@ -14,3 +14,8 @@ end
 Factory.sequence :loginId do |n|
   "asshat-#{n}"
 end
+
+Factory.define :broment do |broment|
+  broment.content "Foo bar"
+  broment.association :user
+end

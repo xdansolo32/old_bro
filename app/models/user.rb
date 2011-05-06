@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :loginId, :password, :password_confirmation
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
+  has_many :broments, :dependent => :destroy
   validates :name, :presence => true, :length => { :maximum => 64 }
   validates :email, :presence => true, :length => { :maximum => 64 }, 
   			:format   => { :with => email_regex }, :uniqueness => { :case_sensitive => false}
@@ -41,6 +42,12 @@ class User < ActiveRecord::Base
     user = find_by_id(id)
     (user && user.salt == cookie_salt) ? user : nil
   end
+  
+  def feed
+    # This is preliminary. See Chapter 12 for the full implementation.
+    Broment.where("user_id = ?", id)
+  end
+
   
   private
     def encrypt_password

@@ -1,0 +1,10 @@
+<div class="user_info">
+  <a href="<%= user_path(current_user) %>">
+    <p class="user_name">
+      <%= current_user.name %>
+    </p> 
+    <p class="broments">
+      <%= pluralize(current_user.broments.count, "broment") %>
+    </p>
+  </a>
+</div>

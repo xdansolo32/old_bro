@@ -10561,3 +10561,1143 @@ Rendered layouts/_header.html.erb (44.9ms)
 Rendered layouts/_footer.html.erb (0.9ms)
 Rendered info/home.html.erb within layouts/application (57.0ms)
 Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.3ms)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEntries (20110416203529)
+Migrating to AddAttachmentPhotoToEntry (20110416210003)
+Migrating to CreateUsers (20110419003606)
+Migrating to AddEmailUniquenessIndex (20110419192320)
+Migrating to AddLoginIdUniquenessIndex (20110419192353)
+Migrating to AddPasswordToUsers (20110419194709)
+Migrating to AddSaltToUsers (20110419200859)
+Migrating to AddAdminToUsers (20110504025401)
+Migrating to CreateBroments (20110504070832)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("broments")[0m
+  [1m[35mSQL (0.2ms)[0m  CREATE INDEX "index_broments_on_user_id" ON "broments" ("user_id")
+SQLite3::SQLException: no such table: main.broments: CREATE  INDEX "index_broments_on_user_id" ON "broments" ("user_id")
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEntries (20110416203529)
+Migrating to AddAttachmentPhotoToEntry (20110416210003)
+Migrating to CreateUsers (20110419003606)
+Migrating to AddEmailUniquenessIndex (20110419192320)
+Migrating to AddLoginIdUniquenessIndex (20110419192353)
+Migrating to AddPasswordToUsers (20110419194709)
+Migrating to AddSaltToUsers (20110419200859)
+Migrating to AddAdminToUsers (20110504025401)
+Migrating to CreateBroments (20110504070832)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("broments")[0m
+  [1m[35mSQL (0.2ms)[0m  CREATE INDEX "index_broments_on_user_id" ON "broments" ("user_id")
+SQLite3::SQLException: no such table: main.broments: CREATE  INDEX "index_broments_on_user_id" ON "broments" ("user_id")
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEntries (20110416203529)
+Migrating to AddAttachmentPhotoToEntry (20110416210003)
+Migrating to CreateUsers (20110419003606)
+Migrating to AddEmailUniquenessIndex (20110419192320)
+Migrating to AddLoginIdUniquenessIndex (20110419192353)
+Migrating to AddPasswordToUsers (20110419194709)
+Migrating to AddSaltToUsers (20110419200859)
+Migrating to AddAdminToUsers (20110504025401)
+Migrating to CreateBroments (20110504070832)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("broments")[0m
+  [1m[35mSQL (0.2ms)[0m  CREATE INDEX "index_broments_on_user_id" ON "broments" ("user_id")
+SQLite3::SQLException: no such table: main.broments: CREATE  INDEX "index_broments_on_user_id" ON "broments" ("user_id")
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEntries (20110416203529)
+Migrating to AddAttachmentPhotoToEntry (20110416210003)
+Migrating to CreateUsers (20110419003606)
+Migrating to AddEmailUniquenessIndex (20110419192320)
+Migrating to AddLoginIdUniquenessIndex (20110419192353)
+Migrating to AddPasswordToUsers (20110419194709)
+Migrating to AddSaltToUsers (20110419200859)
+Migrating to AddAdminToUsers (20110504025401)
+Migrating to CreateBroments (20110504072743)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "broments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("broments")
+  [1m[36mSQL (0.1ms)[0m  [1mCREATE INDEX "index_broments_on_user_id" ON "broments" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110504072743')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("broments")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_broments_on_user_id')[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_users_on_loginId')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.3ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.4ms)[0m  CREATE TABLE "broments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("broments")[0m
+  [1m[35mSQL (1.1ms)[0m  CREATE INDEX "index_broments_on_user_id" ON "broments" ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.4ms)[0m  CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "bio" text, "quote" text, "origin" varchar(255), "birth" date, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "loginId" varchar(255), "fistPumps" integer, "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "admin" boolean) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (1.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36mSQL (2.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_loginId" ON "users" ("loginId")[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110504072743')
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20110416203529')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110416210003')
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20110419003606')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110419192320')
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20110419192353')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110419194709')
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20110419200859')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110504025401')
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 6[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sequi laudantium ea non ut beatae rerum.', 1, '2011-05-05 07:34:08.648895', '2011-05-05 07:34:08.648895')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Adipisci est cupiditate rem incidunt est.', 1, '2011-05-05 07:34:08.661944', '2011-05-05 07:34:08.661944')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolores possimus nobis qui ratione impedit expedita sapiente atque rerum.', 1, '2011-05-05 07:34:08.666174', '2011-05-05 07:34:08.666174')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptas officia qui et id eum non.', 1, '2011-05-05 07:34:08.670016', '2011-05-05 07:34:08.670016')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolorem necessitatibus aut quos tempora consequatur libero consectetur quisquam eos.', 1, '2011-05-05 07:34:08.674792', '2011-05-05 07:34:08.674792')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quo ut commodi sit assumenda excepturi molestiae unde.', 1, '2011-05-05 07:34:08.678513', '2011-05-05 07:34:08.678513')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Neque voluptatem itaque ipsum at cum assumenda quod a ut.', 1, '2011-05-05 07:34:08.683223', '2011-05-05 07:34:08.683223')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aliquid labore sint quis nemo.', 1, '2011-05-05 07:34:08.687393', '2011-05-05 07:34:08.687393')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatibus quia facilis esse nemo.', 1, '2011-05-05 07:34:08.692567', '2011-05-05 07:34:08.692567')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Omnis impedit modi est dolores.', 1, '2011-05-05 07:34:08.697486', '2011-05-05 07:34:08.697486')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Perspiciatis ipsam incidunt eos nisi rerum officia expedita harum nesciunt.', 1, '2011-05-05 07:34:08.701756', '2011-05-05 07:34:08.701756')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Error facere qui veritatis ut beatae doloremque explicabo autem.', 1, '2011-05-05 07:34:08.705841', '2011-05-05 07:34:08.705841')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sit quaerat sit est voluptate ut quod.', 1, '2011-05-05 07:34:08.709985', '2011-05-05 07:34:08.709985')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Eligendi consectetur quaerat vel maxime molestiae qui.', 1, '2011-05-05 07:34:08.714602', '2011-05-05 07:34:08.714602')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Id est velit numquam est sit esse illum sunt.', 1, '2011-05-05 07:34:08.718567', '2011-05-05 07:34:08.718567')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Pariatur ut quidem aliquid architecto iusto.', 1, '2011-05-05 07:34:08.722643', '2011-05-05 07:34:08.722643')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sit et neque tempora aperiam non esse non.', 1, '2011-05-05 07:34:08.726533', '2011-05-05 07:34:08.726533')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('In et deleniti dicta qui qui ea fugit earum aut.', 1, '2011-05-05 07:34:08.730447', '2011-05-05 07:34:08.730447')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Magnam quia optio nostrum deleniti sint provident.', 1, '2011-05-05 07:34:08.734574', '2011-05-05 07:34:08.734574')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et qui cum tempora temporibus voluptatum optio nam sint.', 1, '2011-05-05 07:34:08.738523', '2011-05-05 07:34:08.738523')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Culpa quibusdam ut et sit a molestiae neque similique.', 1, '2011-05-05 07:34:08.742564', '2011-05-05 07:34:08.742564')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ex et omnis nisi enim voluptas et mollitia.', 1, '2011-05-05 07:34:08.746586', '2011-05-05 07:34:08.746586')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sequi ratione qui occaecati vero et totam voluptas.', 1, '2011-05-05 07:34:08.750656', '2011-05-05 07:34:08.750656')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Qui eius eos praesentium sunt.', 1, '2011-05-05 07:34:08.789307', '2011-05-05 07:34:08.789307')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatibus voluptatum non consequatur commodi nesciunt.', 1, '2011-05-05 07:34:08.794085', '2011-05-05 07:34:08.794085')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aperiam dolore doloremque quod consequatur ut et blanditiis illum.', 1, '2011-05-05 07:34:08.798149', '2011-05-05 07:34:08.798149')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nam ea beatae dolor suscipit voluptas aut ut.', 1, '2011-05-05 07:34:08.802413', '2011-05-05 07:34:08.802413')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Atque voluptas nam voluptatum eligendi qui assumenda ipsum quos eos.', 1, '2011-05-05 07:34:08.806698', '2011-05-05 07:34:08.806698')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Possimus atque est sed quaerat aut accusantium earum.', 1, '2011-05-05 07:34:08.810465', '2011-05-05 07:34:08.810465')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatem repellat illo est eaque.', 1, '2011-05-05 07:34:08.814811', '2011-05-05 07:34:08.814811')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quidem a voluptas ipsa in.', 1, '2011-05-05 07:34:08.818900', '2011-05-05 07:34:08.818900')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Optio impedit dolores autem est.', 1, '2011-05-05 07:34:08.822884', '2011-05-05 07:34:08.822884')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Suscipit doloremque dolor est molestiae ut et.', 1, '2011-05-05 07:34:08.826798', '2011-05-05 07:34:08.826798')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ab repellat qui et cupiditate dolor ullam assumenda.', 1, '2011-05-05 07:34:08.830666', '2011-05-05 07:34:08.830666')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ad odit consequatur veritatis eos eligendi.', 1, '2011-05-05 07:34:08.834960', '2011-05-05 07:34:08.834960')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Libero suscipit adipisci commodi atque ut.', 1, '2011-05-05 07:34:08.838919', '2011-05-05 07:34:08.838919')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quia et id beatae fugiat.', 1, '2011-05-05 07:34:08.842741', '2011-05-05 07:34:08.842741')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Corrupti dolores perferendis enim aliquid.', 1, '2011-05-05 07:34:08.847024', '2011-05-05 07:34:08.847024')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nam quos labore debitis quo nemo incidunt animi quae.', 1, '2011-05-05 07:34:08.851272', '2011-05-05 07:34:08.851272')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Qui ipsam et qui vitae.', 1, '2011-05-05 07:34:08.855313', '2011-05-05 07:34:08.855313')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Non deleniti non minus dolorem aut.', 1, '2011-05-05 07:34:08.859398', '2011-05-05 07:34:08.859398')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Omnis hic fugit incidunt illo itaque et illum recusandae.', 1, '2011-05-05 07:34:08.863367', '2011-05-05 07:34:08.863367')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dignissimos dolorem numquam libero amet quae ipsum excepturi consequatur officiis.', 1, '2011-05-05 07:34:08.867501', '2011-05-05 07:34:08.867501')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aut consectetur non deserunt modi perspiciatis.', 1, '2011-05-05 07:34:08.871821', '2011-05-05 07:34:08.871821')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Blanditiis maxime neque sit qui harum et beatae.', 1, '2011-05-05 07:34:08.876977', '2011-05-05 07:34:08.876977')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('In unde cumque sint ea odit cupiditate temporibus tempore.', 1, '2011-05-05 07:34:08.882118', '2011-05-05 07:34:08.882118')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Labore ipsa maiores ipsam corrupti.', 1, '2011-05-05 07:34:08.886666', '2011-05-05 07:34:08.886666')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aut doloremque dicta ut fugiat voluptas quia.', 1, '2011-05-05 07:34:08.890699', '2011-05-05 07:34:08.890699')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptas est placeat aliquid eum alias voluptatem.', 1, '2011-05-05 07:34:08.894883', '2011-05-05 07:34:08.894883')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Molestias amet aut sint quidem voluptates saepe expedita.', 1, '2011-05-05 07:34:08.899224', '2011-05-05 07:34:08.899224')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolores dolor eveniet rerum asperiores quis quibusdam.', 2, '2011-05-05 07:34:08.903590', '2011-05-05 07:34:08.903590')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nostrum veritatis quia expedita voluptatum consequatur.', 2, '2011-05-05 07:34:08.908559', '2011-05-05 07:34:08.908559')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('A voluptas nihil commodi natus molestiae rerum molestias.', 2, '2011-05-05 07:34:08.912312', '2011-05-05 07:34:08.912312')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Necessitatibus laboriosam quo commodi molestiae ipsum rerum illum cumque.', 2, '2011-05-05 07:34:08.916838', '2011-05-05 07:34:08.916838')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Neque temporibus est rerum autem voluptate.', 2, '2011-05-05 07:34:08.921121', '2011-05-05 07:34:08.921121')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nihil officiis enim labore quidem consequatur.', 2, '2011-05-05 07:34:08.926063', '2011-05-05 07:34:08.926063')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Est eum laborum laboriosam eos laudantium.', 2, '2011-05-05 07:34:08.929994', '2011-05-05 07:34:08.929994')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Iste rem et aliquam consequatur.', 2, '2011-05-05 07:34:08.967494', '2011-05-05 07:34:08.967494')
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aut qui est sint dolorum.', 2, '2011-05-05 07:34:08.973293', '2011-05-05 07:34:08.973293')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Itaque excepturi non consequatur consequuntur debitis rerum ut blanditiis ea.', 2, '2011-05-05 07:34:08.977965', '2011-05-05 07:34:08.977965')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nisi amet soluta est omnis aut quas.', 2, '2011-05-05 07:34:08.982085', '2011-05-05 07:34:08.982085')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aut hic omnis fuga corrupti maxime ex doloribus.', 2, '2011-05-05 07:34:08.986196', '2011-05-05 07:34:08.986196')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aut est et cumque non nisi ut distinctio assumenda qui.', 2, '2011-05-05 07:34:08.990196', '2011-05-05 07:34:08.990196')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Laborum impedit qui recusandae et laboriosam.', 2, '2011-05-05 07:34:08.994084', '2011-05-05 07:34:08.994084')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptas quia voluptatem aut velit.', 2, '2011-05-05 07:34:08.997628', '2011-05-05 07:34:08.997628')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Magni cupiditate tempora nisi aperiam aut minus error.', 2, '2011-05-05 07:34:09.001922', '2011-05-05 07:34:09.001922')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Placeat doloremque nihil ut autem tempore laborum.', 2, '2011-05-05 07:34:09.006049', '2011-05-05 07:34:09.006049')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Est illum explicabo et cum.', 2, '2011-05-05 07:34:09.009901', '2011-05-05 07:34:09.009901')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Temporibus esse quos consequatur repellendus eligendi.', 2, '2011-05-05 07:34:09.013833', '2011-05-05 07:34:09.013833')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Inventore autem dolorem iure velit hic et porro.', 2, '2011-05-05 07:34:09.018632', '2011-05-05 07:34:09.018632')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aliquam dolores nesciunt esse laudantium laborum.', 2, '2011-05-05 07:34:09.022650', '2011-05-05 07:34:09.022650')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Repellat dolores quam fugiat corrupti ut.', 2, '2011-05-05 07:34:09.026673', '2011-05-05 07:34:09.026673')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Qui delectus sequi esse voluptates doloremque reprehenderit velit sint.', 2, '2011-05-05 07:34:09.030919', '2011-05-05 07:34:09.030919')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Repellendus quo quis odit commodi eligendi.', 2, '2011-05-05 07:34:09.035277', '2011-05-05 07:34:09.035277')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Incidunt quam repellat atque exercitationem pariatur.', 2, '2011-05-05 07:34:09.039511', '2011-05-05 07:34:09.039511')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tenetur optio rerum aut aut a exercitationem mollitia ad eos.', 2, '2011-05-05 07:34:09.043314', '2011-05-05 07:34:09.043314')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quam quo quisquam cum qui.', 2, '2011-05-05 07:34:09.047403', '2011-05-05 07:34:09.047403')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Rerum harum quis culpa est ut quae mollitia dolorem.', 2, '2011-05-05 07:34:09.051815', '2011-05-05 07:34:09.051815')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Recusandae id non laudantium in quisquam provident.', 2, '2011-05-05 07:34:09.055974', '2011-05-05 07:34:09.055974')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quae ratione at ut laudantium.', 2, '2011-05-05 07:34:09.060676', '2011-05-05 07:34:09.060676')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Reiciendis laborum iste sequi voluptatibus laudantium eum rerum aliquam.', 2, '2011-05-05 07:34:09.065893', '2011-05-05 07:34:09.065893')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quaerat est vero nulla dignissimos.', 2, '2011-05-05 07:34:09.071060', '2011-05-05 07:34:09.071060')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Accusamus quasi numquam accusantium consectetur tenetur veritatis quia.', 2, '2011-05-05 07:34:09.076095', '2011-05-05 07:34:09.076095')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatibus dolor deleniti voluptate eos qui.', 2, '2011-05-05 07:34:09.080090', '2011-05-05 07:34:09.080090')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Asperiores ut voluptatibus maxime soluta sunt sit maiores.', 2, '2011-05-05 07:34:09.084334', '2011-05-05 07:34:09.084334')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Eos doloribus et laborum quis ipsum aut.', 2, '2011-05-05 07:34:09.087998', '2011-05-05 07:34:09.087998')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Possimus sapiente qui itaque quod quo cum hic iste.', 2, '2011-05-05 07:34:09.092777', '2011-05-05 07:34:09.092777')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Molestias iure itaque porro id excepturi voluptatem nihil rerum.', 2, '2011-05-05 07:34:09.096790', '2011-05-05 07:34:09.096790')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Fugit suscipit quis consequatur magnam est voluptatem in repellendus.', 2, '2011-05-05 07:34:09.101217', '2011-05-05 07:34:09.101217')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Laboriosam et rem exercitationem molestias expedita minus blanditiis quidem.', 2, '2011-05-05 07:34:09.105736', '2011-05-05 07:34:09.105736')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et mollitia asperiores temporibus nesciunt perferendis delectus.', 2, '2011-05-05 07:34:09.143454', '2011-05-05 07:34:09.143454')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolorum commodi quo quaerat iste voluptas et quis culpa.', 2, '2011-05-05 07:34:09.147798', '2011-05-05 07:34:09.147798')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nihil ipsum delectus officia nulla quis blanditiis facilis.', 2, '2011-05-05 07:34:09.151707', '2011-05-05 07:34:09.151707')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Porro minus natus ut cum eveniet eligendi sunt.', 2, '2011-05-05 07:34:09.156539', '2011-05-05 07:34:09.156539')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sint cumque dignissimos quam quo.', 2, '2011-05-05 07:34:09.162247', '2011-05-05 07:34:09.162247')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sapiente itaque molestias voluptas ullam eius exercitationem sit placeat.', 2, '2011-05-05 07:34:09.168042', '2011-05-05 07:34:09.168042')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tempore ut quis quasi quia ea.', 2, '2011-05-05 07:34:09.172225', '2011-05-05 07:34:09.172225')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Necessitatibus ipsa in ut totam sequi molestiae itaque dolor.', 2, '2011-05-05 07:34:09.176696', '2011-05-05 07:34:09.176696')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Corporis pariatur tenetur adipisci repudiandae enim ex est impedit.', 2, '2011-05-05 07:34:09.181016', '2011-05-05 07:34:09.181016')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tempora modi neque occaecati molestiae et libero temporibus.', 2, '2011-05-05 07:34:09.185342', '2011-05-05 07:34:09.185342')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et illo necessitatibus omnis quia dolore nihil eos.', 4, '2011-05-05 07:34:09.189501', '2011-05-05 07:34:09.189501')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sit laboriosam sapiente et aut sint.', 4, '2011-05-05 07:34:09.193681', '2011-05-05 07:34:09.193681')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Perspiciatis possimus assumenda quam consequuntur quidem impedit.', 4, '2011-05-05 07:34:09.197760', '2011-05-05 07:34:09.197760')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ut quas consequatur eum iusto autem officia non omnis nesciunt.', 4, '2011-05-05 07:34:09.202147', '2011-05-05 07:34:09.202147')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Possimus enim beatae repellat iusto et asperiores.', 4, '2011-05-05 07:34:09.206600', '2011-05-05 07:34:09.206600')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptas et est ut quis magnam et iusto.', 4, '2011-05-05 07:34:09.210879', '2011-05-05 07:34:09.210879')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatibus sit nemo cumque non tempora.', 4, '2011-05-05 07:34:09.214810', '2011-05-05 07:34:09.214810')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Reiciendis maiores eum voluptatem sed modi incidunt excepturi voluptatem ut.', 4, '2011-05-05 07:34:09.219242', '2011-05-05 07:34:09.219242')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quaerat in similique iure ut sit nobis omnis voluptas earum.', 4, '2011-05-05 07:34:09.223161', '2011-05-05 07:34:09.223161')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Velit libero iusto incidunt inventore voluptatem nemo aut veritatis.', 4, '2011-05-05 07:34:09.227009', '2011-05-05 07:34:09.227009')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nobis est in saepe dolore necessitatibus reiciendis ratione.', 4, '2011-05-05 07:34:09.230669', '2011-05-05 07:34:09.230669')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Saepe corporis assumenda fuga consequatur enim et.', 4, '2011-05-05 07:34:09.234875', '2011-05-05 07:34:09.234875')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Suscipit ut est ut fugiat neque deserunt facere non.', 4, '2011-05-05 07:34:09.238675', '2011-05-05 07:34:09.238675')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Rerum autem veniam accusantium voluptatem qui architecto.', 4, '2011-05-05 07:34:09.242387', '2011-05-05 07:34:09.242387')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et et ipsam ut quia vel.', 4, '2011-05-05 07:34:09.246409', '2011-05-05 07:34:09.246409')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Qui aut aliquid atque mollitia perspiciatis sapiente.', 4, '2011-05-05 07:34:09.251077', '2011-05-05 07:34:09.251077')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quia enim consequatur harum omnis dolorem velit numquam.', 4, '2011-05-05 07:34:09.255602', '2011-05-05 07:34:09.255602')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatem et unde et enim cumque.', 4, '2011-05-05 07:34:09.259674', '2011-05-05 07:34:09.259674')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Facere vel exercitationem doloremque quia repellat repudiandae.', 4, '2011-05-05 07:34:09.263455', '2011-05-05 07:34:09.263455')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quod sint cumque enim autem facilis alias libero optio.', 4, '2011-05-05 07:34:09.267490', '2011-05-05 07:34:09.267490')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quaerat nisi ullam dolor alias impedit.', 4, '2011-05-05 07:34:09.271416', '2011-05-05 07:34:09.271416')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Reprehenderit provident aut quia fuga eaque eligendi vero.', 4, '2011-05-05 07:34:09.275914', '2011-05-05 07:34:09.275914')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aut officia voluptas ab est voluptate praesentium itaque distinctio quia.', 4, '2011-05-05 07:34:09.280022', '2011-05-05 07:34:09.280022')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Inventore alias totam vitae quos occaecati.', 4, '2011-05-05 07:34:09.317642', '2011-05-05 07:34:09.317642')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Repudiandae incidunt voluptatem nisi nulla cumque non odio fugit.', 4, '2011-05-05 07:34:09.322043', '2011-05-05 07:34:09.322043')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptas qui voluptas perspiciatis minus modi.', 4, '2011-05-05 07:34:09.325701', '2011-05-05 07:34:09.325701')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quis molestias repellendus totam sit.', 4, '2011-05-05 07:34:09.329892', '2011-05-05 07:34:09.329892')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Natus quia assumenda maxime voluptate aut dolorem cum tenetur praesentium.', 4, '2011-05-05 07:34:09.334339', '2011-05-05 07:34:09.334339')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et sed ut beatae aut in eaque.', 4, '2011-05-05 07:34:09.338121', '2011-05-05 07:34:09.338121')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nostrum voluptatem qui ducimus aspernatur dolores temporibus repellendus repellat.', 4, '2011-05-05 07:34:09.343676', '2011-05-05 07:34:09.343676')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Cupiditate eum qui exercitationem quod velit nemo.', 4, '2011-05-05 07:34:09.348511', '2011-05-05 07:34:09.348511')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Odit quidem veritatis inventore id debitis quaerat.', 4, '2011-05-05 07:34:09.353061', '2011-05-05 07:34:09.353061')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sunt fugiat sapiente rem aperiam et cum ea modi quas.', 4, '2011-05-05 07:34:09.357088', '2011-05-05 07:34:09.357088')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tenetur cum sint rerum qui pariatur unde et voluptate.', 4, '2011-05-05 07:34:09.361355', '2011-05-05 07:34:09.361355')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatum blanditiis optio necessitatibus aspernatur dignissimos reiciendis.', 4, '2011-05-05 07:34:09.365789', '2011-05-05 07:34:09.365789')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Veritatis consequatur optio possimus voluptatibus quas natus sit tempore.', 4, '2011-05-05 07:34:09.369890', '2011-05-05 07:34:09.369890')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Vel natus ut error minus asperiores qui totam quibusdam est.', 4, '2011-05-05 07:34:09.374146', '2011-05-05 07:34:09.374146')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Accusantium non eum nisi qui.', 4, '2011-05-05 07:34:09.378289', '2011-05-05 07:34:09.378289')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quas quia veniam et occaecati eaque aperiam.', 4, '2011-05-05 07:34:09.382444', '2011-05-05 07:34:09.382444')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Soluta eos autem itaque sapiente est.', 4, '2011-05-05 07:34:09.386786', '2011-05-05 07:34:09.386786')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Explicabo et sint non ea.', 4, '2011-05-05 07:34:09.390642', '2011-05-05 07:34:09.390642')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nihil natus voluptas consequatur voluptas quia sed.', 4, '2011-05-05 07:34:09.394866', '2011-05-05 07:34:09.394866')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nemo qui dolorem aut eligendi omnis corporis.', 4, '2011-05-05 07:34:09.399290', '2011-05-05 07:34:09.399290')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Exercitationem dolor libero quo deserunt quis.', 4, '2011-05-05 07:34:09.403457', '2011-05-05 07:34:09.403457')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Autem debitis pariatur nesciunt aut nam vero.', 4, '2011-05-05 07:34:09.407555', '2011-05-05 07:34:09.407555')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Numquam commodi officiis ut praesentium accusantium fugit sed.', 4, '2011-05-05 07:34:09.411767', '2011-05-05 07:34:09.411767')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Magni ut ut aut atque fugiat cumque architecto ullam.', 4, '2011-05-05 07:34:09.416257', '2011-05-05 07:34:09.416257')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quis est iusto sed natus adipisci temporibus.', 4, '2011-05-05 07:34:09.420601', '2011-05-05 07:34:09.420601')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quia laudantium unde provident tempore voluptatem nulla facere possimus.', 4, '2011-05-05 07:34:09.425493', '2011-05-05 07:34:09.425493')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Repellat sit ut nisi suscipit eum consectetur.', 4, '2011-05-05 07:34:09.429654', '2011-05-05 07:34:09.429654')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Autem maxime neque dolorem quam placeat velit accusamus.', 5, '2011-05-05 07:34:09.435112', '2011-05-05 07:34:09.435112')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptate libero ut culpa itaque assumenda repellat.', 5, '2011-05-05 07:34:09.440193', '2011-05-05 07:34:09.440193')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatibus veritatis saepe porro odio quo doloribus debitis natus corrupti.', 5, '2011-05-05 07:34:09.444839', '2011-05-05 07:34:09.444839')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Iste fugiat alias aut molestiae ea sunt ab tempora.', 5, '2011-05-05 07:34:09.449157', '2011-05-05 07:34:09.449157')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Amet repudiandae vero accusantium aut vel praesentium non.', 5, '2011-05-05 07:34:09.453318', '2011-05-05 07:34:09.453318')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et sapiente suscipit modi nesciunt vel eum quia.', 5, '2011-05-05 07:34:09.490995', '2011-05-05 07:34:09.490995')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Excepturi iusto repudiandae impedit est doloremque.', 5, '2011-05-05 07:34:09.494632', '2011-05-05 07:34:09.494632')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et fugiat quisquam non labore laudantium.', 5, '2011-05-05 07:34:09.498598', '2011-05-05 07:34:09.498598')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Rerum id aliquid aperiam quibusdam maiores rerum eos modi molestias.', 5, '2011-05-05 07:34:09.503121', '2011-05-05 07:34:09.503121')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Laborum iste doloribus ut ducimus repellendus consequuntur necessitatibus commodi magni.', 5, '2011-05-05 07:34:09.507017', '2011-05-05 07:34:09.507017')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aut in quidem culpa nihil dolorem.', 5, '2011-05-05 07:34:09.510922', '2011-05-05 07:34:09.510922')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ipsam animi non nihil soluta consequuntur omnis sed.', 5, '2011-05-05 07:34:09.514834', '2011-05-05 07:34:09.514834')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Soluta quia vero et et et.', 5, '2011-05-05 07:34:09.519344', '2011-05-05 07:34:09.519344')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quasi rerum et earum a.', 5, '2011-05-05 07:34:09.523429', '2011-05-05 07:34:09.523429')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Animi molestiae perspiciatis modi aut qui qui consequuntur incidunt ab.', 5, '2011-05-05 07:34:09.528156', '2011-05-05 07:34:09.528156')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Repellat sed qui at maxime aut voluptas quisquam vel eos.', 5, '2011-05-05 07:34:09.532939', '2011-05-05 07:34:09.532939')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolorum sint est necessitatibus quam.', 5, '2011-05-05 07:34:09.538022', '2011-05-05 07:34:09.538022')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Non cumque ab dicta qui rem et eius.', 5, '2011-05-05 07:34:09.542878', '2011-05-05 07:34:09.542878')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolor deserunt aut quo reiciendis.', 5, '2011-05-05 07:34:09.547929', '2011-05-05 07:34:09.547929')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolorum sint quasi sed at enim incidunt non rem perferendis.', 5, '2011-05-05 07:34:09.552470', '2011-05-05 07:34:09.552470')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Praesentium sed ex tenetur aliquam alias ut adipisci.', 5, '2011-05-05 07:34:09.556760', '2011-05-05 07:34:09.556760')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aspernatur dolore eaque iusto aliquid.', 5, '2011-05-05 07:34:09.560750', '2011-05-05 07:34:09.560750')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quia cum qui non magni esse aut qui.', 5, '2011-05-05 07:34:09.564552', '2011-05-05 07:34:09.564552')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Est esse facilis optio non consequuntur sint culpa rerum.', 5, '2011-05-05 07:34:09.568900', '2011-05-05 07:34:09.568900')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Blanditiis iusto porro harum tempore.', 5, '2011-05-05 07:34:09.572808', '2011-05-05 07:34:09.572808')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quia est repudiandae omnis rem.', 5, '2011-05-05 07:34:09.576995', '2011-05-05 07:34:09.576995')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Blanditiis sunt omnis ut cupiditate aperiam.', 5, '2011-05-05 07:34:09.581366', '2011-05-05 07:34:09.581366')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tempore neque et temporibus quidem ipsa ut.', 5, '2011-05-05 07:34:09.585316', '2011-05-05 07:34:09.585316')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nisi ut eligendi consequatur voluptatibus.', 5, '2011-05-05 07:34:09.589187', '2011-05-05 07:34:09.589187')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Accusamus est laborum debitis dolorem sequi temporibus dolorem qui facilis.', 5, '2011-05-05 07:34:09.593898', '2011-05-05 07:34:09.593898')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Qui illum recusandae et in quia.', 5, '2011-05-05 07:34:09.597740', '2011-05-05 07:34:09.597740')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Deleniti dolores repellat quis vero quos aut et optio.', 5, '2011-05-05 07:34:09.602043', '2011-05-05 07:34:09.602043')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Itaque quo perferendis voluptates sit.', 5, '2011-05-05 07:34:09.606486', '2011-05-05 07:34:09.606486')[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quis aliquid praesentium labore eos.', 5, '2011-05-05 07:34:09.611236', '2011-05-05 07:34:09.611236')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Facilis occaecati deserunt aut aspernatur similique.', 5, '2011-05-05 07:34:09.616720', '2011-05-05 07:34:09.616720')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Placeat qui ratione dicta molestiae quibusdam ut ullam et.', 5, '2011-05-05 07:34:09.620847', '2011-05-05 07:34:09.620847')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Molestias velit ea id dolore beatae dolorem.', 5, '2011-05-05 07:34:09.658151', '2011-05-05 07:34:09.658151')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Provident voluptatibus libero aliquam quia perferendis eum.', 5, '2011-05-05 07:34:09.662945', '2011-05-05 07:34:09.662945')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aliquid minima iste quo nemo pariatur accusantium.', 5, '2011-05-05 07:34:09.668155', '2011-05-05 07:34:09.668155')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolores nihil maxime reiciendis temporibus rem explicabo.', 5, '2011-05-05 07:34:09.672311', '2011-05-05 07:34:09.672311')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sequi harum eos omnis quo.', 5, '2011-05-05 07:34:09.677070', '2011-05-05 07:34:09.677070')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sed aspernatur provident eveniet vel culpa nihil corrupti id vero.', 5, '2011-05-05 07:34:09.681085', '2011-05-05 07:34:09.681085')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Officiis architecto aut est suscipit.', 5, '2011-05-05 07:34:09.685384', '2011-05-05 07:34:09.685384')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sit est ut ex et dignissimos.', 5, '2011-05-05 07:34:09.689326', '2011-05-05 07:34:09.689326')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Nulla ut ad molestiae ab.', 5, '2011-05-05 07:34:09.694178', '2011-05-05 07:34:09.694178')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sunt sint similique tenetur omnis nihil qui laborum in.', 5, '2011-05-05 07:34:09.698363', '2011-05-05 07:34:09.698363')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quidem et at exercitationem est dolorum.', 5, '2011-05-05 07:34:09.702335', '2011-05-05 07:34:09.702335')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dignissimos facere distinctio a dolor.', 5, '2011-05-05 07:34:09.706460', '2011-05-05 07:34:09.706460')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Laudantium corporis eum consequatur magni eos unde dolor nihil.', 5, '2011-05-05 07:34:09.710480', '2011-05-05 07:34:09.710480')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Molestiae laudantium fugit inventore ut est.', 5, '2011-05-05 07:34:09.714596', '2011-05-05 07:34:09.714596')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Labore itaque odit consequatur autem ab.', 6, '2011-05-05 07:34:09.718883', '2011-05-05 07:34:09.718883')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Distinctio officiis repellendus voluptates omnis nihil velit eaque.', 6, '2011-05-05 07:34:09.722798', '2011-05-05 07:34:09.722798')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Hic dolorem maiores laudantium excepturi officia sed accusantium officiis suscipit.', 6, '2011-05-05 07:34:09.727338', '2011-05-05 07:34:09.727338')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Corrupti id quia asperiores vel illum deserunt omnis quod.', 6, '2011-05-05 07:34:09.731387', '2011-05-05 07:34:09.731387')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ut quia officiis voluptatem rerum esse nihil quibusdam tempore molestias.', 6, '2011-05-05 07:34:09.735584', '2011-05-05 07:34:09.735584')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Necessitatibus quaerat cum expedita rerum.', 6, '2011-05-05 07:34:09.739553', '2011-05-05 07:34:09.739553')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et ratione blanditiis facilis ex ut.', 6, '2011-05-05 07:34:09.743608', '2011-05-05 07:34:09.743608')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('In nihil repellendus est sed.', 6, '2011-05-05 07:34:09.747453', '2011-05-05 07:34:09.747453')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('In sequi modi et velit numquam tempore corporis neque.', 6, '2011-05-05 07:34:09.751955', '2011-05-05 07:34:09.751955')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Labore fugit enim ut assumenda officia totam.', 6, '2011-05-05 07:34:09.755645', '2011-05-05 07:34:09.755645')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sequi est odio est laboriosam asperiores.', 6, '2011-05-05 07:34:09.760138', '2011-05-05 07:34:09.760138')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et corrupti provident et corporis.', 6, '2011-05-05 07:34:09.763925', '2011-05-05 07:34:09.763925')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Provident dolorem nihil dolor sint dicta aut optio.', 6, '2011-05-05 07:34:09.768833', '2011-05-05 07:34:09.768833')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Itaque voluptatem voluptatibus enim commodi nobis corporis.', 6, '2011-05-05 07:34:09.772917', '2011-05-05 07:34:09.772917')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Maxime et possimus aut nisi aut quis est et modi.', 6, '2011-05-05 07:34:09.777023', '2011-05-05 07:34:09.777023')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tenetur sapiente similique sit dignissimos vitae rem quas non.', 6, '2011-05-05 07:34:09.781097', '2011-05-05 07:34:09.781097')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ipsum accusantium ducimus nulla quaerat ut libero facilis.', 6, '2011-05-05 07:34:09.785471', '2011-05-05 07:34:09.785471')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Beatae aut nihil a commodi est eligendi quae dignissimos minus.', 6, '2011-05-05 07:34:09.823163', '2011-05-05 07:34:09.823163')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Temporibus quaerat voluptatem animi dolore enim in.', 6, '2011-05-05 07:34:09.827175', '2011-05-05 07:34:09.827175')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dicta temporibus assumenda laudantium est non qui id.', 6, '2011-05-05 07:34:09.831040', '2011-05-05 07:34:09.831040')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Debitis consectetur doloremque culpa enim nam eius repellat.', 6, '2011-05-05 07:34:09.835525', '2011-05-05 07:34:09.835525')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quis est et sapiente dignissimos quod molestiae sunt et.', 6, '2011-05-05 07:34:09.839653', '2011-05-05 07:34:09.839653')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Non ad veniam doloremque nihil enim esse fugiat architecto.', 6, '2011-05-05 07:34:09.843921', '2011-05-05 07:34:09.843921')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quidem maxime similique quia provident quis.', 6, '2011-05-05 07:34:09.848232', '2011-05-05 07:34:09.848232')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quae ut dicta sint quia.', 6, '2011-05-05 07:34:09.852278', '2011-05-05 07:34:09.852278')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Consequatur voluptatem doloribus quod sed est impedit velit eaque est.', 6, '2011-05-05 07:34:09.856495', '2011-05-05 07:34:09.856495')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Inventore molestiae sunt eos enim.', 6, '2011-05-05 07:34:09.860263', '2011-05-05 07:34:09.860263')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ut quisquam expedita voluptatibus consequatur minus incidunt.', 6, '2011-05-05 07:34:09.864526', '2011-05-05 07:34:09.864526')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Reprehenderit nesciunt molestiae blanditiis magnam sunt voluptates illo quasi quia.', 6, '2011-05-05 07:34:09.868778', '2011-05-05 07:34:09.868778')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quisquam suscipit ut qui et sint quia impedit consequatur.', 6, '2011-05-05 07:34:09.872910', '2011-05-05 07:34:09.872910')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Delectus dolorum odio ipsa aut labore ratione possimus esse.', 6, '2011-05-05 07:34:09.877317', '2011-05-05 07:34:09.877317')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Repellendus non sequi qui voluptatem alias ratione rerum earum qui.', 6, '2011-05-05 07:34:09.881487', '2011-05-05 07:34:09.881487')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quae possimus ullam deleniti a animi qui.', 6, '2011-05-05 07:34:09.885606', '2011-05-05 07:34:09.885606')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Deserunt exercitationem consequatur illum repudiandae.', 6, '2011-05-05 07:34:09.889881', '2011-05-05 07:34:09.889881')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolorem et id facilis nostrum ea in perferendis aut.', 6, '2011-05-05 07:34:09.893932', '2011-05-05 07:34:09.893932')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Facilis corporis dolor dolores placeat.', 6, '2011-05-05 07:34:09.898244', '2011-05-05 07:34:09.898244')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Consectetur harum necessitatibus nobis dolores veniam deleniti ad.', 6, '2011-05-05 07:34:09.902169', '2011-05-05 07:34:09.902169')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Error hic quae delectus voluptates incidunt.', 6, '2011-05-05 07:34:09.906177', '2011-05-05 07:34:09.906177')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Aut maxime rem placeat beatae ut alias.', 6, '2011-05-05 07:34:09.910428', '2011-05-05 07:34:09.910428')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tempore consequatur quasi officiis omnis.', 6, '2011-05-05 07:34:09.914544', '2011-05-05 07:34:09.914544')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tenetur velit adipisci enim ut accusantium dicta ut.', 6, '2011-05-05 07:34:09.918897', '2011-05-05 07:34:09.918897')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Qui sed porro architecto ex.', 6, '2011-05-05 07:34:09.923211', '2011-05-05 07:34:09.923211')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quas consectetur qui hic tempora repudiandae minus et sit commodi.', 6, '2011-05-05 07:34:09.927263', '2011-05-05 07:34:09.927263')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Est sequi omnis autem aut voluptatum minus aut.', 6, '2011-05-05 07:34:09.931376', '2011-05-05 07:34:09.931376')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Odio et et consequatur architecto labore sint.', 6, '2011-05-05 07:34:09.935401', '2011-05-05 07:34:09.935401')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quae accusamus voluptates consequatur est omnis officiis perspiciatis.', 6, '2011-05-05 07:34:09.939177', '2011-05-05 07:34:09.939177')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Vero eius quis rerum ratione qui magni dolorum sit dolore.', 6, '2011-05-05 07:34:09.943120', '2011-05-05 07:34:09.943120')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quo dolores laudantium maxime est rerum.', 6, '2011-05-05 07:34:09.982287', '2011-05-05 07:34:09.982287')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Libero voluptas voluptatem sint reiciendis.', 6, '2011-05-05 07:34:09.986430', '2011-05-05 07:34:09.986430')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatem at occaecati in est aperiam doloremque sint.', 6, '2011-05-05 07:34:09.990272', '2011-05-05 07:34:09.990272')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et earum dolor eos magnam perferendis eum.', 7, '2011-05-05 07:34:09.994292', '2011-05-05 07:34:09.994292')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Blanditiis autem minus ratione facere cum voluptatem.', 7, '2011-05-05 07:34:09.997994', '2011-05-05 07:34:09.997994')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ut voluptate velit et vero aspernatur repudiandae tempore molestiae excepturi.', 7, '2011-05-05 07:34:10.001719', '2011-05-05 07:34:10.001719')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Qui quia sit saepe aut harum voluptatibus expedita.', 7, '2011-05-05 07:34:10.005344', '2011-05-05 07:34:10.005344')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Est illum repellat est minus similique praesentium qui eaque.', 7, '2011-05-05 07:34:10.009338', '2011-05-05 07:34:10.009338')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Veritatis quae itaque qui delectus eius aut odit.', 7, '2011-05-05 07:34:10.013124', '2011-05-05 07:34:10.013124')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Occaecati quia sequi adipisci quidem distinctio nam.', 7, '2011-05-05 07:34:10.018206', '2011-05-05 07:34:10.018206')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Vel non ut soluta et.', 7, '2011-05-05 07:34:10.022230', '2011-05-05 07:34:10.022230')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dolor aut possimus iste omnis.', 7, '2011-05-05 07:34:10.026346', '2011-05-05 07:34:10.026346')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Excepturi nobis vel voluptates mollitia.', 7, '2011-05-05 07:34:10.030143', '2011-05-05 07:34:10.030143')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Unde et quae dolores cumque maxime dolore inventore sint.', 7, '2011-05-05 07:34:10.034395', '2011-05-05 07:34:10.034395')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Corporis consequuntur recusandae officia sit quibusdam.', 7, '2011-05-05 07:34:10.038091', '2011-05-05 07:34:10.038091')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Qui blanditiis nihil magni sapiente est ex.', 7, '2011-05-05 07:34:10.042949', '2011-05-05 07:34:10.042949')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Non ut ipsam ducimus necessitatibus cupiditate maxime.', 7, '2011-05-05 07:34:10.046835', '2011-05-05 07:34:10.046835')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Atque dolores explicabo est eius.', 7, '2011-05-05 07:34:10.050839', '2011-05-05 07:34:10.050839')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Facilis sed dignissimos laboriosam reiciendis nobis tempora.', 7, '2011-05-05 07:34:10.054798', '2011-05-05 07:34:10.054798')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sed modi laborum architecto quis nesciunt explicabo iure omnis qui.', 7, '2011-05-05 07:34:10.059097', '2011-05-05 07:34:10.059097')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Expedita omnis iure et rerum distinctio aut velit quisquam ipsam.', 7, '2011-05-05 07:34:10.062919', '2011-05-05 07:34:10.062919')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Delectus beatae ut repellat consequatur sint.', 7, '2011-05-05 07:34:10.067774', '2011-05-05 07:34:10.067774')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Consequatur ut repellat iusto et exercitationem explicabo.', 7, '2011-05-05 07:34:10.071671', '2011-05-05 07:34:10.071671')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Est hic laborum voluptas numquam et impedit.', 7, '2011-05-05 07:34:10.075970', '2011-05-05 07:34:10.075970')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quod quaerat reprehenderit omnis dolorem magni.', 7, '2011-05-05 07:34:10.079698', '2011-05-05 07:34:10.079698')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tenetur dolore voluptatem et mollitia delectus.', 7, '2011-05-05 07:34:10.084085', '2011-05-05 07:34:10.084085')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ullam non qui et qui.', 7, '2011-05-05 07:34:10.088257', '2011-05-05 07:34:10.088257')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatem est consequatur enim quia nesciunt est.', 7, '2011-05-05 07:34:10.092314', '2011-05-05 07:34:10.092314')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sint est non nobis ratione molestiae quam earum reprehenderit expedita.', 7, '2011-05-05 07:34:10.096233', '2011-05-05 07:34:10.096233')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Soluta sed consectetur amet velit voluptatibus.', 7, '2011-05-05 07:34:10.135636', '2011-05-05 07:34:10.135636')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Et velit voluptatibus non vitae necessitatibus corporis.', 7, '2011-05-05 07:34:10.141048', '2011-05-05 07:34:10.141048')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Labore quibusdam consequatur sit eligendi consequatur perspiciatis iusto dolores.', 7, '2011-05-05 07:34:10.144993', '2011-05-05 07:34:10.144993')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Est labore dolorum et autem est sed.', 7, '2011-05-05 07:34:10.148760', '2011-05-05 07:34:10.148760')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ullam aspernatur aut pariatur molestias impedit autem aut itaque doloribus.', 7, '2011-05-05 07:34:10.152668', '2011-05-05 07:34:10.152668')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dicta pariatur exercitationem qui provident porro autem.', 7, '2011-05-05 07:34:10.156553', '2011-05-05 07:34:10.156553')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Eveniet vel assumenda dignissimos enim ut nesciunt.', 7, '2011-05-05 07:34:10.160410', '2011-05-05 07:34:10.160410')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Perferendis qui dolor in soluta deleniti eligendi veritatis.', 7, '2011-05-05 07:34:10.164167', '2011-05-05 07:34:10.164167')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Sint est consequatur quae iste neque nesciunt enim.', 7, '2011-05-05 07:34:10.168188', '2011-05-05 07:34:10.168188')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Atque vel eos rerum error omnis laudantium dolor quo non.', 7, '2011-05-05 07:34:10.172100', '2011-05-05 07:34:10.172100')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Consequatur sit sed velit veniam eaque adipisci.', 7, '2011-05-05 07:34:10.175953', '2011-05-05 07:34:10.175953')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Consequatur et sint ab at quia tempora rerum.', 7, '2011-05-05 07:34:10.179809', '2011-05-05 07:34:10.179809')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Qui similique qui ad quaerat eum magni in.', 7, '2011-05-05 07:34:10.184341', '2011-05-05 07:34:10.184341')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Labore minus quia corrupti excepturi.', 7, '2011-05-05 07:34:10.188394', '2011-05-05 07:34:10.188394')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Quia corrupti est dignissimos consequuntur quaerat iste aliquam.', 7, '2011-05-05 07:34:10.192550', '2011-05-05 07:34:10.192550')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Eum ab in voluptatem repellat molestiae.', 7, '2011-05-05 07:34:10.196325', '2011-05-05 07:34:10.196325')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Tempore voluptates minus debitis aut.', 7, '2011-05-05 07:34:10.201295', '2011-05-05 07:34:10.201295')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Dicta ut rerum eligendi enim quos.', 7, '2011-05-05 07:34:10.205351', '2011-05-05 07:34:10.205351')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Voluptatibus non nisi voluptas voluptas culpa voluptate quo dolorem quod.', 7, '2011-05-05 07:34:10.209181', '2011-05-05 07:34:10.209181')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Explicabo et non quibusdam et voluptatem sed.', 7, '2011-05-05 07:34:10.213446', '2011-05-05 07:34:10.213446')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Ipsum voluptas non ut facilis nihil sed perferendis.', 7, '2011-05-05 07:34:10.217743', '2011-05-05 07:34:10.217743')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Omnis voluptatem omnis minus hic eum ut.', 7, '2011-05-05 07:34:10.222108', '2011-05-05 07:34:10.222108')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Explicabo aut qui itaque non repellat cupiditate maiores.', 7, '2011-05-05 07:34:10.226342', '2011-05-05 07:34:10.226342')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('Deserunt consequatur asperiores eveniet in ratione.', 7, '2011-05-05 07:34:10.230215', '2011-05-05 07:34:10.230215')
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 00:34:48 -0700
+  Processing by InfoController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (14.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (78.3ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (89.4ms)
+Completed 200 OK in 129ms (Views: 114.4ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-05-05 00:34:53 -0700
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (84.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered sessions/new.html.erb within layouts/application (100.4ms)
+Completed 200 OK in 106ms (Views: 105.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-05-05 00:35:03 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C0vu8+Mkdqp2ZfztpL/89C+L1+6z3Fu8Aw3k2pvj+FI=", "session"=>{"email"=>"dansun@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (20.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'dansun@example.com' LIMIT 1
+Redirected to http://localhost:3000/users/37
+Completed 302 Found in 120ms
+
+
+Started GET "/users/37" for 127.0.0.1 at 2011-05-05 00:35:03 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered users/show.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 157ms (Views: 29.3ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-05-05 00:35:12 -0700
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mUser Load (48.5ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+Rendered users/_user.html.erb (42.5ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/index.html.erb within layouts/application (58.7ms)
+Completed 200 OK in 163ms (Views: 63.9ms | ActiveRecord: 49.2ms)
+
+
+Started GET "/users/37" for 127.0.0.1 at 2011-05-05 00:35:13 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (4.1ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/show.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 131ms (Views: 27.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-05-05 00:35:17 -0700
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mUser Load (10.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+Rendered users/_user.html.erb (42.2ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered users/index.html.erb within layouts/application (58.9ms)
+Completed 200 OK in 166ms (Views: 63.7ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-05-05 00:35:19 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mBroment Load (1.1ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 1) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 1)
+Rendered broments/_broment.html.erb (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 1)[0m
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered layouts/_header.html.erb (5.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/show.html.erb within layouts/application (74.9ms)
+Completed 200 OK in 147ms (Views: 79.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/37" for 127.0.0.1 at 2011-05-05 00:35:33 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (5.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/show.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 134ms (Views: 30.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/37/edit" for 127.0.0.1 at 2011-05-05 00:35:37 -0700
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (0.8ms)
+Rendered users/_fields.html.erb (7.4ms)
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/edit.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 118ms (Views: 30.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-05-05 00:35:37 -0700
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mUser Load (10.4ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+Rendered users/_user.html.erb (40.9ms)
+Rendered layouts/_stylesheets.html.erb (1.8ms)
+Rendered layouts/_header.html.erb (3.4ms)
+Rendered layouts/_footer.html.erb (1.2ms)
+Rendered users/index.html.erb within layouts/application (59.7ms)
+Completed 200 OK in 167ms (Views: 65.2ms | ActiveRecord: 11.1ms)
+
+
+Started POST "/signout" for 127.0.0.1 at 2011-05-05 00:35:39 -0700
+  Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"C0vu8+Mkdqp2ZfztpL/89C+L1+6z3Fu8Aw3k2pvj+FI="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 00:35:39 -0700
+  Processing by InfoController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (45.7ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 15:28:15 -0700
+  Processing by InfoController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (202.1ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Rendered info/home.html.erb within layouts/application (234.3ms)
+Completed 200 OK in 243ms (Views: 241.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:19:27 -0700
+  Processing by InfoController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (42.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:27:30 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_stylesheets.html.erb (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (4.5ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 61ms (Views: 22.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-05-05 17:27:32 -0700
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (81.5ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered sessions/new.html.erb within layouts/application (93.3ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-05-05 17:27:36 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "session"=>{"email"=>"dansun@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (16.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'dansun@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/users/37
+Completed 302 Found in 102ms
+
+
+Started GET "/users/37" for 127.0.0.1 at 2011-05-05 17:27:36 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered layouts/_header.html.erb (4.6ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/show.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 89ms (Views: 26.3ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:27:38 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered shared/_broment_form.html.erb (51.8ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (9.2ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (4.3ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 140ms (Views: 82.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:30:13 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_broment_form.html.erb (52.3ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (10.2ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (80.6ms)
+Completed 200 OK in 150ms (Views: 85.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:30:29 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered shared/_broment_form.html.erb (10.0ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (10.3ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (5.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 148ms (Views: 43.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:30:36 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered shared/_broment_form.html.erb (10.4ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (9.4ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 145ms (Views: 41.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:30:55 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered shared/_broment_form.html.erb (11.5ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (8.9ms)
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (4.2ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered info/home.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 149ms (Views: 45.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:31:12 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.1ms)
+Rendered shared/_broment_form.html.erb (11.1ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (9.7ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (3.8ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Rendered info/home.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 147ms (Views: 41.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2011-05-05 17:40:34 -0700
+  Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (1.9ms)[0m  [1mSELECT "entries".* FROM "entries"[0m
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (113.4ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered entries/index.html.erb within layouts/application (154.1ms)
+Completed 200 OK in 179ms (Views: 160.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-05-05 17:40:36 -0700
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mUser Load (11.4ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+Rendered users/_user.html.erb (45.1ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/index.html.erb within layouts/application (62.7ms)
+Completed 200 OK in 171ms (Views: 67.6ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:40:38 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_broment_form.html.erb (11.1ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (24.7ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 169ms (Views: 57.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:41:20 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.3ms)
+Rendered shared/_broment_form.html.erb (12.8ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (12.9ms)
+Rendered layouts/_stylesheets.html.erb (1.8ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 158ms (Views: 51.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:42:19 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered shared/_broment_form.html.erb (9.5ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (9.1ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (5.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 102ms (Views: 41.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-05-05 17:43:04 -0700
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mUser Load (51.3ms)[0m  SELECT "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Rendered users/_user.html.erb (42.1ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (3.7ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/index.html.erb within layouts/application (60.3ms)
+Completed 200 OK in 169ms (Views: 65.1ms | ActiveRecord: 52.0ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2011-05-05 17:43:10 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 25) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 25)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 25)[0m
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered layouts/_header.html.erb (5.8ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/show.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 131ms (Views: 28.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:43:17 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.2ms)
+Rendered shared/_broment_form.html.erb (10.3ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (8.9ms)
+Rendered layouts/_stylesheets.html.erb (1.8ms)
+Rendered layouts/_header.html.erb (4.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 106ms (Views: 41.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/broments" for 127.0.0.1 at 2011-05-05 17:43:36 -0700
+  Processing by BromentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "broment"=>{"content"=>""}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (52.0ms)
+Rendered shared/_broment_form.html.erb (56.1ms)
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (6.0ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (4.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (81.9ms)
+Completed 200 OK in 180ms (Views: 86.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/broments" for 127.0.0.1 at 2011-05-05 17:43:49 -0700
+  Processing by BromentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "broment"=>{"content"=>"wtf is up mah bromosexuals ?_?\r\n"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('wtf is up mah bromosexuals ?_?
+', 37, '2011-05-06 00:43:49.732983', '2011-05-06 00:43:49.732983')
+Redirected to http://localhost:3000/
+Completed 302 Found in 121ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 17:43:49 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (6.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_broment_form.html.erb (9.5ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (7.9ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (4.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 152ms (Views: 38.4ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/users/37" for 127.0.0.1 at 2011-05-05 17:43:52 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+Rendered broments/_broment.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (4.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/show.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 129ms (Views: 33.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-05-05 19:00:22 -0700
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mUser Load (10.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (21.0ms)[0m  SELECT COUNT(*) FROM "users"
+Rendered users/_user.html.erb (39.0ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Rendered users/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 211ms (Views: 124.5ms | ActiveRecord: 31.5ms)
+
+
+Started GET "/users/37" for 127.0.0.1 at 2011-05-05 19:00:42 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.4ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+Rendered broments/_broment.html.erb (6.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (4.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/show.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 132ms (Views: 34.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2011-05-05 19:00:57 -0700
+  Processing by EntriesController#index as HTML
+  [1m[35mEntry Load (1.8ms)[0m  SELECT "entries".* FROM "entries"
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (94.5ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered entries/index.html.erb within layouts/application (128.9ms)
+Completed 200 OK in 204ms (Views: 148.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/entries/1" for 127.0.0.1 at 2011-05-05 19:01:00 -0700
+  Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEntry Load (1.5ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (93.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered entries/show.html.erb within layouts/application (106.2ms)
+Completed 200 OK in 161ms (Views: 123.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 19:13:14 -0700
+  Processing by InfoController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0[0m
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_broment_form.html.erb (9.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered shared/_feed_item.html.erb (64.9ms)
+Rendered shared/_feed.html.erb (66.8ms)
+Rendered info/home.html.erb within layouts/application (80.3ms)
+Completed   in 183ms
+
+ActionView::Template::Error (undefined method `gravatar_for' for #<#<Class:0x00000100e1da10>:0x00000100e12408>):
+    1: <tr>
+    2:   <td class="avatar">
+    3:     #<%= link_to gravatar_for(feed_item.user), feed_item.user %>
+    4:   </td>
+    5:   <td class="broment">
+    6:     <span class="user">
+  app/views/shared/_feed_item.html.erb:3:in `_app_views_shared__feed_item_html_erb__1977132540099955836_2154374400_169152865520562817'
+  app/views/shared/_feed.html.erb:3:in `_app_views_shared__feed_html_erb___180803921985980470_2154393440_2241438013479139711'
+  app/views/info/home.html.erb:7:in `_app_views_info_home_html_erb__3579877053992995923_2154852280__623072712686629590'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 19:13:40 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_broment_form.html.erb (9.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_feed_item.html.erb (9.2ms)
+Rendered shared/_feed.html.erb (11.2ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (8.3ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (2.9ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 150ms (Views: 49.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/broments" for 127.0.0.1 at 2011-05-05 19:22:53 -0700
+  Processing by BromentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "broment"=>{"content"=>"second poast\r\n"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('second poast
+', 37, '2011-05-06 02:22:53.950102', '2011-05-06 02:22:53.950102')
+Redirected to http://localhost:3000/
+Completed 302 Found in 76ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 19:22:53 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_broment_form.html.erb (9.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered shared/_feed_item.html.erb (50.9ms)
+Rendered shared/_feed.html.erb (52.6ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+Rendered shared/_user_info.html.erb (10.1ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (89.7ms)
+Completed 200 OK in 157ms (Views: 94.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/broments/302" for 127.0.0.1 at 2011-05-05 19:22:58 -0700
+  Processing by BromentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "id"=>"302"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE "broments"."id" = 302 ORDER BY broments.created_at DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "broments" WHERE "broments"."id" = 302[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 119ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 19:22:58 -0700
+  Processing by InfoController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered shared/_broment_form.html.erb (11.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered shared/_feed_item.html.erb (9.9ms)
+Rendered shared/_feed.html.erb (11.8ms)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+Rendered shared/_user_info.html.erb (8.5ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (48.1ms)
+Completed 200 OK in 154ms (Views: 52.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/broments" for 127.0.0.1 at 2011-05-05 19:23:05 -0700
+  Processing by BromentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "broment"=>{"content"=>"two broments"}, "commit"=>"Submit"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('two broments', 37, '2011-05-06 02:23:05.890475', '2011-05-06 02:23:05.890475')[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 115ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 19:23:05 -0700
+  Processing by InfoController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered shared/_broment_form.html.erb (10.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_feed_item.html.erb (12.0ms)
+Rendered shared/_feed.html.erb (13.9ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (8.7ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Rendered info/home.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 159ms (Views: 54.9ms | ActiveRecord: 1.8ms)

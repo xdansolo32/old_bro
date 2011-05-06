@@ -200,3 +200,59 @@ ul.users {
 .users li {
   list-style: none;
 }
+
+/* Broment crap */
+h1.broment {
+  margin-bottom: 0.3em;
+}
+
+table.broments {
+  margin-top: 1em;
+}
+
+table.broments tr {
+  height: 70px;
+}
+
+table.broments tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.broments tr td.broment {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.broments tr td.broment span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.broment {
+  font-size: 80%;
+}
+
+form.broment {
+  margin-bottom: 2em;
+}
+
+form.broment textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
