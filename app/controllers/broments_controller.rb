@@ -2,6 +2,14 @@ class BromentsController < ApplicationController
   before_filter :authenticate, :only => [:create, :destroy]
   before_filter :authorized_user, :only => :destroy
 
+  def index
+    
+    @user = User.find(params[:user_id])
+    @name = @user.name
+    @broments = @user.broments
+	@title = @user.name + "'s Broments"
+  end
+  
   def create
     @broment  = current_user.broments.build(params[:broment])
     if @broment.save

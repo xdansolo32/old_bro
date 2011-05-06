@@ -1,7 +1,10 @@
 Encybropedia::Application.routes.draw do
   get "sessions/new"
 
-  resources :entries, :users
+  resources :entries
+  resources :users do
+    resources :broments
+  end
   resources :sessions, :only => [:new, :create, :destroy]
   resources :broments, :only => [:create, :destroy]
   

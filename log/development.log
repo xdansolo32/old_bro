@@ -11701,3 +11701,1038 @@ Rendered layouts/_header.html.erb (3.3ms)
 Rendered layouts/_footer.html.erb (0.6ms)
 Rendered info/home.html.erb within layouts/application (50.3ms)
 Completed 200 OK in 159ms (Views: 54.9ms | ActiveRecord: 1.8ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE "broments"."id" = 37 ORDER BY broments.created_at DESC LIMIT 1[0m
+  [1m[35mBroment Load (0.5ms)[0m  SELECT "broments".* FROM "broments" WHERE "broments"."user_id" = 37 ORDER BY broments.created_at DESC
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+  [1m[35mBroment Load (0.4ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC
+
+
+Started GET "/users/1/broments" for 127.0.0.1 at 2011-05-05 21:12:38 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE "broments"."user_id" IS NULL ORDER BY broments.created_at DESC
+Rendered collection (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (105.5ms)
+Rendered layouts/_footer.html.erb (1.2ms)
+Rendered broments/index.html.erb within layouts/application (118.7ms)
+Completed 200 OK in 156ms (Views: 123.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/2/broments" for 127.0.0.1 at 2011-05-05 21:13:41 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mBroment Load (0.2ms)[0m  SELECT "broments".* FROM "broments" WHERE "broments"."user_id" IS NULL ORDER BY broments.created_at DESC
+Rendered collection (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (99.6ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (110.4ms)
+Completed 200 OK in 131ms (Views: 114.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/2/broments" for 127.0.0.1 at 2011-05-05 21:14:16 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+Completed   in 13ms
+
+NoMethodError (undefined method `to_sym' for nil:NilClass):
+  app/controllers/broments_controller.rb:8:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/users/2/broments" for 127.0.0.1 at 2011-05-05 21:14:48 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE "broments"."user_id" IS NULL ORDER BY broments.created_at DESC
+Rendered collection (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (60.8ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered broments/index.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 94ms (Views: 77.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2/broments" for 127.0.0.1 at 2011-05-05 21:16:55 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE "broments"."user_id" = 'id' ORDER BY broments.created_at DESC
+Rendered collection (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (97.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered broments/index.html.erb within layouts/application (126.0ms)
+Completed 200 OK in 146ms (Views: 129.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/2/broments" for 127.0.0.1 at 2011-05-05 21:17:31 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mBroment Load (0.2ms)[0m  SELECT "broments".* FROM "broments" WHERE "broments"."user_id" = 'id' ORDER BY broments.created_at DESC
+Rendered collection (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (101.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered broments/index.html.erb within layouts/application (113.0ms)
+Completed 200 OK in 134ms (Views: 117.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/broments" for 127.0.0.1 at 2011-05-05 21:17:51 -0700
+
+ActionController::RoutingError (No route matches "/broments"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/users/2/broments" for 127.0.0.1 at 2011-05-05 21:21:41 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE "broments"."user_id" = 'id' ORDER BY broments.created_at DESC
+Rendered broments/index.html.erb within layouts/application (33.4ms)
+Completed   in 56ms
+
+ActionView::Template::Error (undefined local variable or method `broment' for #<#<Class:0x00000102caf398>:0x00000102caa5f0>):
+    1: <h1>My Broments</h1>
+    2: broment.inspect
+    3: <%= debug(broment) %>
+    4: <ul class="users">
+    5:   	<%= render @broments %>
+    6: </ul>
+  app/views/broments/index.html.erb:3:in `_app_views_broments_index_html_erb__4326633183362006303_2170891940__1260349550964741964'
+  app/controllers/broments_controller.rb:13:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/users/2/broments" for 127.0.0.1 at 2011-05-05 21:22:21 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mBroment Load (0.4ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE "broments"."user_id" = 'id' ORDER BY broments.created_at DESC[0m
+Rendered broments/index.html.erb within layouts/application (11.2ms)
+Completed   in 34ms
+
+ActionView::Template::Error (undefined local variable or method `broments' for #<#<Class:0x000001009debc0>:0x000001009b07c0>):
+    1: <h1>My Broments</h1>
+    2: @broments.inspect
+    3: <%= debug(broments) %>
+    4: <ul class="users">
+    5:   	<%= render @broments %>
+    6: </ul>
+  app/views/broments/index.html.erb:3:in `_app_views_broments_index_html_erb__4326633183362006303_2152489000__1260349550964741964'
+  app/controllers/broments_controller.rb:13:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/users/2/broments" for 127.0.0.1 at 2011-05-05 21:22:32 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE "broments"."user_id" = 'id' ORDER BY broments.created_at DESC
+Rendered broments/index.html.erb within layouts/application (10.9ms)
+Completed   in 32ms
+
+ActionView::Template::Error (undefined local variable or method `broments' for #<#<Class:0x00000100d76c10>:0x00000100c9e018>):
+    1: <h1>My Broments</h1>
+    2: broments.inspect
+    3: <%= debug(broments) %>
+    4: <ul class="users">
+    5:   	<%= render @broments %>
+    6: </ul>
+  app/views/broments/index.html.erb:3:in `_app_views_broments_index_html_erb__4326633183362006303_2154092240__1260349550964741964'
+  app/controllers/broments_controller.rb:13:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/users/2/broments" for 127.0.0.1 at 2011-05-05 21:22:46 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE "broments"."user_id" = 'id' ORDER BY broments.created_at DESC[0m
+Rendered collection (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered layouts/_header.html.erb (98.9ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered broments/index.html.erb within layouts/application (111.2ms)
+Completed 200 OK in 131ms (Views: 116.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 21:25:01 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+Rendered broments/index.html.erb within layouts/application (0.9ms)
+Completed   in 7ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <h1>My Broments</h1>
+    2: 
+    3: <ul class="users">
+    4:   	<%= render @broments %>
+    5: </ul>
+  app/views/broments/index.html.erb:4:in `_app_views_broments_index_html_erb__4326633183362006303_2164773260__1260349550964741964'
+  app/controllers/broments_controller.rb:13:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 21:25:26 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[36mBroment Load (0.5ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE "broments"."user_id" = 37 ORDER BY broments.created_at DESC[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered broments/_broment.html.erb (107.8ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (4.3ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (135.4ms)
+Completed 200 OK in 158ms (Views: 140.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 21:33:14 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+Completed   in 27ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/broments_controller.rb:13:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 21:35:17 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered broments/_broment.html.erb (20.3ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (4.8ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 147ms (Views: 44.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/3/broments" for 127.0.0.1 at 2011-05-05 21:35:23 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Completed   in 74ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=3):
+  app/controllers/broments_controller.rb:13:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/users/1/broments" for 127.0.0.1 at 2011-05-05 21:35:35 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mBroment Load (1.6ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 1) ORDER BY broments.created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered broments/_broment.html.erb (58.1ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (3.8ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered broments/index.html.erb within layouts/application (79.8ms)
+Completed 200 OK in 187ms (Views: 82.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/4/broments" for 127.0.0.1 at 2011-05-05 23:17:22 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"4"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mBroment Load (1.5ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 4) ORDER BY broments.created_at DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+Rendered broments/_broment.html.erb (57.6ms)
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (79.9ms)
+Completed 200 OK in 190ms (Views: 83.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:17:28 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered broments/_broment.html.erb (22.0ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (3.6ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (80.5ms)
+Completed 200 OK in 146ms (Views: 85.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:18:04 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.4ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered broments/_broment.html.erb (61.7ms)
+Rendered layouts/_stylesheets.html.erb (1.9ms)
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 146ms (Views: 84.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/36/broments" for 127.0.0.1 at 2011-05-05 23:18:10 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"36"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 36) ORDER BY broments.created_at DESC
+Rendered collection (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered layouts/_header.html.erb (6.4ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered broments/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 125ms (Views: 22.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/36/broments" for 127.0.0.1 at 2011-05-05 23:18:29 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"36"}
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 36) ORDER BY broments.created_at DESC[0m
+Rendered collection (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered layouts/_header.html.erb (14.4ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 165ms (Views: 31.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:18:36 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered broments/_broment.html.erb (14.3ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered broments/index.html.erb within layouts/application (81.7ms)
+Completed 200 OK in 149ms (Views: 86.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 23:18:50 -0700
+  Processing by InfoController#home as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered shared/_broment_form.html.erb (51.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_feed_item.html.erb (12.8ms)
+Rendered shared/_feed.html.erb (14.6ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (10.0ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (94.7ms)
+Completed 200 OK in 165ms (Views: 99.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:19:21 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered broments/_broment.html.erb (20.1ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (3.7ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered broments/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 147ms (Views: 42.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:20:47 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.4ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered broments/_broment.html.erb (22.5ms)
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+Rendered layouts/_header.html.erb (4.1ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered broments/index.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 150ms (Views: 48.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:21:23 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.4ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered broments/_broment.html.erb (65.7ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (4.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered broments/index.html.erb within layouts/application (85.7ms)
+Completed 200 OK in 153ms (Views: 91.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:21:33 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.4ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered broments/_broment.html.erb (21.5ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (3.4ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered broments/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 149ms (Views: 44.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:21:49 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.3ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered broments/_broment.html.erb (20.5ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 105ms (Views: 42.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:21:57 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+ERROR: compiling _app_views_broments_index_html_erb___849411761282199221_2171496520_4192945084248506349 RAISED /Users/danisun/rails_projects/bromiscuous/app/views/broments/index.html.erb:3: syntax error, unexpected '<'
+<ul class="users">
+ ^
+/Users/danisun/rails_projects/bromiscuous/app/views/broments/index.html.erb:5: unterminated regexp meets end of file
+/Users/danisun/rails_projects/bromiscuous/app/views/broments/index.html.erb:5: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_broments_index_html_erb___849411761282199221_2171496520_4192945084248506349(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "broments/index";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>');@output_buffer.append= (#{@name});@output_buffer.safe_concat(' Broments</h1>
+
+<ul class="users">
+  	');@output_buffer.append= ( render @broments );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</ul>
+
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/template.rb:255:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/template.rb:255:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/template.rb:134:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:436:in `_run__4584108873370556256__process_action__2386600264038618788__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_controller/metal.rb:178:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:32:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.6/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.6/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.6/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.6/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.6/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered broments/index.html.erb within layouts/application (24.0ms)
+Completed   in 133ms
+
+ActionView::Template::Error (/Users/danisun/rails_projects/bromiscuous/app/views/broments/index.html.erb:3: syntax error, unexpected '<'
+<ul class="users">
+ ^
+/Users/danisun/rails_projects/bromiscuous/app/views/broments/index.html.erb:5: unterminated regexp meets end of file
+/Users/danisun/rails_projects/bromiscuous/app/views/broments/index.html.erb:5: syntax error, unexpected $end, expecting ')'):
+    1: <h1><%=#{@name}%> Broments</h1>
+    2: 
+    3: <ul class="users">
+    4:   	<%= render @broments %>
+    5: </ul>
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  [1m[36mBroment Load (0.5ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC[0m
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.3ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:22:10 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered broments/_broment.html.erb (21.5ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Rendered broments/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 145ms (Views: 43.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/37/broments" for 127.0.0.1 at 2011-05-05 23:22:18 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.5ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 37) ORDER BY broments.created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered broments/_broment.html.erb (62.0ms)
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (83.7ms)
+Completed 200 OK in 151ms (Views: 88.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/31/broments" for 127.0.0.1 at 2011-05-05 23:22:25 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"31"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1
+  [1m[36mBroment Load (0.3ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 31) ORDER BY broments.created_at DESC[0m
+Rendered collection (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered layouts/_header.html.erb (6.3ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 127ms (Views: 23.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/1/broments" for 127.0.0.1 at 2011-05-05 23:22:32 -0700
+  Processing by BromentsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mBroment Load (2.9ms)[0m  SELECT "broments".* FROM "broments" WHERE ("broments".user_id = 1) ORDER BY broments.created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered broments/_broment.html.erb (57.2ms)
+Rendered layouts/_stylesheets.html.erb (2.7ms)
+Rendered layouts/_header.html.erb (3.4ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered broments/index.html.erb within layouts/application (80.3ms)
+Completed 200 OK in 190ms (Views: 81.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 23:25:44 -0700
+  Processing by InfoController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.4ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0[0m
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_broment_form.html.erb (49.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_feed_item.html.erb (11.4ms)
+Rendered shared/_feed.html.erb (13.4ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (8.9ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (3.6ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (90.5ms)
+Completed 200 OK in 156ms (Views: 95.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/broments" for 127.0.0.1 at 2011-05-05 23:25:58 -0700
+  Processing by BromentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "broment"=>{"content"=>"superlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERD"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (2.9ms)
+Rendered shared/_broment_form.html.erb (6.3ms)
+Rendered shared/_feed.html.erb (0.7ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (4.0ms)
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (4.1ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Rendered info/home.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 144ms (Views: 35.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/broments" for 127.0.0.1 at 2011-05-05 23:26:04 -0700
+  Processing by BromentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "broment"=>{"content"=>"superlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERD"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (3.0ms)
+Rendered shared/_broment_form.html.erb (6.3ms)
+Rendered shared/_feed.html.erb (0.8ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (3.8ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 143ms (Views: 33.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/broments" for 127.0.0.1 at 2011-05-05 23:26:10 -0700
+  Processing by BromentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "broment"=>{"content"=>"superlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERD"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (2.9ms)
+Rendered shared/_broment_form.html.erb (6.4ms)
+Rendered shared/_feed.html.erb (0.7ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (4.2ms)
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (4.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (69.8ms)
+Completed 200 OK in 144ms (Views: 74.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/broments" for 127.0.0.1 at 2011-05-05 23:26:20 -0700
+  Processing by BromentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "broment"=>{"content"=>"superlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERD\r\n"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (3.1ms)
+Rendered shared/_broment_form.html.erb (6.7ms)
+Rendered shared/_feed.html.erb (0.7ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (3.9ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (4.3ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered info/home.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 147ms (Views: 35.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/broments" for 127.0.0.1 at 2011-05-05 23:26:26 -0700
+  Processing by BromentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36555GbmyuPrbaTkrodJ5G01PZVJwMgJWSd9SUddZ/A=", "broment"=>{"content"=>"superlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERD\r\n"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "broments" ("content", "user_id", "created_at", "updated_at") VALUES ('superlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERDsuperlongmicrosofWERD
+', 37, '2011-05-06 06:26:26.585418', '2011-05-06 06:26:26.585418')
+Redirected to http://localhost:3000/
+Completed 302 Found in 121ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 23:26:26 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.4ms)[0m  SELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_broment_form.html.erb (9.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_feed_item.html.erb (16.8ms)
+Rendered shared/_feed.html.erb (18.8ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (10.1ms)
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+Rendered layouts/_header.html.erb (3.6ms)
+Rendered layouts/_footer.html.erb (1.3ms)
+Rendered info/home.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 165ms (Views: 65.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 23:27:44 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.4ms)[0m  SELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_broment_form.html.erb (11.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_feed_item.html.erb (15.2ms)
+Rendered shared/_feed.html.erb (17.1ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (10.3ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (4.9ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 168ms (Views: 63.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 23:28:12 -0700
+  Processing by InfoController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mBroment Load (0.5ms)[0m  SELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered shared/_broment_form.html.erb (11.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+Rendered shared/_feed_item.html.erb (55.3ms)
+Rendered shared/_feed.html.erb (57.6ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)
+Rendered shared/_user_info.html.erb (10.5ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered info/home.html.erb within layouts/application (141.3ms)
+Completed 200 OK in 253ms (Views: 146.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-05-05 23:29:14 -0700
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mUser Load (11.1ms)[0m  SELECT "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Rendered users/_user.html.erb (42.9ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Rendered users/index.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 174ms (Views: 65.7ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-05-05 23:29:17 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mBroment Load (1.1ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE ("broments".user_id = 1) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered broments/_broment.html.erb (32.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 1)[0m
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/show.html.erb within layouts/application (62.7ms)
+Completed 200 OK in 180ms (Views: 108.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 23:29:26 -0700
+  Processing by InfoController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mBroment Load (0.4ms)[0m  [1mSELECT "broments".* FROM "broments" WHERE (user_id = 37) ORDER BY broments.created_at DESC LIMIT 30 OFFSET 0[0m
+Rendered shared/_error_messages.html.erb (1.2ms)
+Rendered shared/_broment_form.html.erb (11.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+Rendered shared/_feed_item.html.erb (15.5ms)
+Rendered shared/_feed.html.erb (17.4ms)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "broments" WHERE ("broments".user_id = 37)[0m
+Rendered shared/_user_info.html.erb (9.8ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered info/home.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 167ms (Views: 61.7ms | ActiveRecord: 1.1ms)
