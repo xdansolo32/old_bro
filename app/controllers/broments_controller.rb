@@ -3,11 +3,19 @@ class BromentsController < ApplicationController
   before_filter :authorized_user, :only => :destroy
 
   def index
-    
+  	
     @user = User.find(params[:user_id])
+    #Uncomment below to show user's posts as /username
+#     if params[:loginId]
+#     	@user = User.where(:loginId => params[:loginId]).first
+#     	@broments = @user.broments
+#     else
+#     	@broments = Broment.all
+#     end
     @name = @user.name
     @broments = @user.broments
 	@title = @user.name + "'s Broments"
+	
   end
   
   def create

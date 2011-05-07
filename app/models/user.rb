@@ -42,13 +42,18 @@ class User < ActiveRecord::Base
     user = find_by_id(id)
     (user && user.salt == cookie_salt) ? user : nil
   end
+
+  def self.search(search, page)
+    paginate :per_page => PAGINATE_COUNT, :page => page,
+           :conditions => ['name like ?', "%#{search}%"], :order => 'name'
+  end
   
   def feed
     # This is preliminary. See Chapter 12 for the full implementation.
     Broment.where("user_id = ?", id)
   end
 
-  
+  PAGINATE_COUNT = 15
   private
     def encrypt_password
       self.salt = make_salt if new_record?

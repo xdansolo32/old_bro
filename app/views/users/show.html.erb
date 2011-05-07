@@ -4,12 +4,7 @@
       <h1>
         <%= @user.name %>
       </h1>
-      <% unless @user.broments.empty? %>
-        <table class="broments" summary="User broments">
-          <%= render @broments %>
-        </table>
-        <%= will_paginate @broments %>
-      <% end %>
+      <%= render 'shared/broments' %>
     </td>
     <td class="sidebar round">
       <strong>User Name</strong> <%= @user.loginId %><br />

@@ -16,6 +16,8 @@ Encybropedia::Application.routes.draw do
   match '/contact', :to => 'info#contact'
   match '/about', :to => 'info#about'
   match '/entries', :to => 'entries#index'
+  match ':loginId/broments' => 'Broments#index', :as => 'user_broments'
+  match '/:loginId' => 'Users#show', :as => 'user_profile'
   
   root :to => 'info#home'
 

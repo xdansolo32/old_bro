@@ -1,6 +1,6 @@
 <tr>
   <td class="broment">
-    <span class="content"><%= broment.content %></span>
+    <span class="content"><%= wrap(broment.content) %></span>
     <span class="timestamp">
       Posted <%= time_ago_in_words(broment.created_at) %> ago.
     </span>

@@ -1,0 +1,5 @@
+<% unless @broments.empty? %>
+    <table class="broments" summary="User broments">
+      <%= render :partial => 'broments/broment', :collection => @broments %>
+    </table>
+<% end %>

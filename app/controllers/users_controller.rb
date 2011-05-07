@@ -7,14 +7,22 @@ class UsersController < ApplicationController
   
   def index
     @title = "Fellow Bros"
-    @users = User.paginate(:page => params[:page])
+    @users = User.search(params[:search], params[:page])
   end
   
-  def show 
+  def show
     @user = User.find(params[:id])
-    @title = @user.name + "'s profile"
-  end
-  
+    # Uncomment next part to do something like /username isntead of /users/1
+    # if params[:loginId]
+#     	@user = User.where(:loginId => params[:loginId]).first
+#     	@broments = @user.broments
+#     else
+#     	@broments = Broment.all
+#     end
+    @broments = @user.broments.paginate(:page => params[:page])
+    @title = @user.name + "'s Brofile"
+  end 
+ 
   def new
     @user = User.new
     @title = "Join the Revbrolution!"
@@ -38,7 +46,7 @@ class UsersController < ApplicationController
   
   def edit
     #@user = User.find(params[:id])
-    @title = "Edit user"
+    @title = "Edit brofile"
   end
   
   def update
@@ -47,7 +55,7 @@ class UsersController < ApplicationController
       flash[:success] = "Brofile updated."
       redirect_to @user
     else
-      @title = "Edit user"
+      @title = "Edit brofile"
       render 'edit'
     end
   end
@@ -63,12 +71,7 @@ class UsersController < ApplicationController
     	redirect_to users_path
     end
   end
-  
-  def show
-    @user = User.find(params[:id])
-    @broments = @user.broments.paginate(:page => params[:page])
-    @title = "Proof that " +  @user.name + " is a total bro"
-  end
+   
   
   private
     
