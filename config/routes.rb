@@ -4,9 +4,13 @@ Encybropedia::Application.routes.draw do
   resources :entries
   resources :users do
     resources :broments
+    member do
+      get :following, :followers
+    end
   end
   resources :sessions, :only => [:new, :create, :destroy]
   resources :broments, :only => [:create, :destroy]
+  resources :relationships, :only => [:create, :destroy]
   
   match '/signup', :to => 'users#new'
   match '/signin', :to => 'sessions#new'

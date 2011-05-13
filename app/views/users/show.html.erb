@@ -4,6 +4,7 @@
       <h1>
         <%= @user.name %>
       </h1>
+       <%= render 'follow_form' if signed_in? %>
       <%= render 'shared/broments' %>
     </td>
     <td class="sidebar round">
@@ -11,6 +12,7 @@
       <strong>Reputation</strong> <%= @user.fistPumps %><br />
       <strong>URL</strong>  <%= link_to @user.loginId + "'s page", @user %>
       <strong>Broments</strong> <%= @user.broments.count %>
+      <%= render 'shared/stats' %>
     </td>
   </tr>
 </table>
